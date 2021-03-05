@@ -1,0 +1,17 @@
+.cards .row{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  background-color: #00000057; 
+  cursor: pointer;
+} 
+
+h1{
+ font-weight: 800;
+ margin: 4vh 0;
+}
+
