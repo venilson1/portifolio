@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="text-center lg:text-left dark:bg-gray-900 bg-gray-100 text-gray-600 dark:text-gray-100">
       <div className="flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
-        <div className="mr-12 hidden lg:block">
+        <div className="mr-12  lg:block">
           <span>© 2022 Copyright</span>
           <a className="text-gray-400 font-semibold" href="https://www.linkedin.com/in/venilson1/" target="_blank" rel="noreferrer">{" "}  Venilson Santos</a>
         </div>
