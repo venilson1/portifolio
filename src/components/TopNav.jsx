@@ -1,4 +1,9 @@
 import React, { useState } from 'react';
+import { AiFillThunderbolt } from "react-icons/ai";
+import { AiFillCode } from "react-icons/ai";
+import { AiFillTrophy } from "react-icons/ai";
+import { FaBook } from "react-icons/fa"
+
 
 export default function TopNav() {
 
@@ -47,11 +52,24 @@ export default function TopNav() {
             <>
               <div className="origin-top-right absolute right-0 top-12 mt-2 w-56 rounded-md 
               shadow-lg dark:bg-gray-700 ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex="-1">
-                <div className="py-1" role="none">
-                  <button href="#" className="text-gray-100 block px-4 py-2 text-base hover:bg-gray-600 w-full hover:text-blue-300" role="menuitem" tabIndex="-1" id="menu-item-0">Stacks</button>
-                  <button href="#" className="text-gray-100 block px-4 py-2 text-base hover:bg-gray-600 w-full hover:text-blue-300" role="menuitem" tabIndex="-1" id="menu-item-1">Open Source</button>
-                  <button href="#" className="text-gray-100 block px-4 py-2 text-base hover:bg-gray-600 w-full hover:text-blue-300" role="menuitem" tabIndex="-1" id="menu-item-2">História</button>
-                  <button href="#" className="text-gray-100 block px-4 py-2 text-base hover:bg-gray-600 w-full hover:text-blue-300" role="menuitem" tabIndex="-1" id="menu-item-2">Conquistas</button>
+                <div className="py-1 " role="none">
+                  <button href="#" className="flex space-x-2 items-center justify-start ml-4 text-gray-100 px-4 py-2 text-base hover:bg-gray-600 w-full hover:text-blue-300" role="menuitem" tabIndex="-1" id="menu-item-0">
+                    <span> <AiFillThunderbolt height={20} /></span>
+                    <span>Stacks</span>
+                  </button>
+                  <button href="#" className="flex space-x-2 items-center justify-start ml-4 text-gray-100 px-4 py-2 text-base hover:bg-gray-600 w-full hover:text-blue-300" role="menuitem" tabIndex="-1" id="menu-item-0">
+                    <span> <AiFillCode height={20} /></span>
+                    <span>Open Source</span>
+                  </button>
+                  <button href="#" className="flex space-x-2 items-center justify-start ml-4 text-gray-100 px-4 py-2 text-base hover:bg-gray-600 w-full hover:text-blue-300" role="menuitem" tabIndex="-1" id="menu-item-0">
+                    <span> <FaBook height={20} /></span>
+                    <span>História</span>
+                  </button>
+                  <button href="#" className="flex space-x-2 items-center justify-start ml-4 text-gray-100 px-4 py-2 text-base hover:bg-gray-600 w-full hover:text-blue-300" role="menuitem" tabIndex="-1" id="menu-item-0">
+                    <span> <AiFillTrophy height={20} /></span>
+                    <span>Conquistas</span>
+                  </button>
+
                 </div>
               </div>
             </>
@@ -77,7 +95,7 @@ export default function TopNav() {
           <div className="justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
             <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
               <li>
-                <span href="#" className="block py-2 pr-4 pl-3 text-white  rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</span>
+                <span href="#" className="block py-2 pr-4 pl-3 text-white  rounded md:bg-transparent md:p-0 dark:text-white" aria-current="page">Home</span>
               </li>
               <li>
                 <span href="#" className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Sobre</span>
