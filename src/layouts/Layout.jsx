@@ -1,7 +1,10 @@
 import React from 'react'
+import TopNav from '../components/TopNav'
 
 export default function Layout() {
   return (
-    <div>Layout</div>
+    <>
+      <TopNav />
+    </>
   )
 }
