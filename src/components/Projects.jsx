@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <>
       <div className="mt-8">
-        <div className="text-center -space-y-3 mb-20">
+        <div className="text-center -space-y-3 mb-10">
           <span className="text-5xl font-extrabold">Projetos</span>
           <p className='underline'>{spaceBetweenUnderline}</p>
         </div>

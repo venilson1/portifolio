@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { AiFillThunderbolt } from "react-icons/ai";
 import { AiFillCode } from "react-icons/ai";
 import { AiFillTrophy } from "react-icons/ai";
-import { FaBook } from "react-icons/fa"
+import { AiFillRead } from "react-icons/ai"
+import { Link } from 'react-router-dom';
 
 
 export default function TopNav() {
@@ -10,7 +11,7 @@ export default function TopNav() {
 
   const [isMenu, setIsMenu] = useState(false);
   const [dropDown, setDropDown] = useState(false);
-  const image = 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+  const image = "https://avatars.githubusercontent.com/u/57969262?v=4";
 
   const handlerIsMenu = () => {
     setIsMenu(!isMenu)
@@ -19,22 +20,22 @@ export default function TopNav() {
   return (
     <nav className="bg-white border-gray-200 px-2 sm:px-4 py-3 dark:bg-gray-700">
       <div className=" container flex flex-wrap justify-between  items-center mx-auto">
-        <div className=' flex'>
-          <a href="https://flowbite.com" className="flex items-center">
+        <div className="flex items-center">
+          <Link to={`/`}>
             <img className="h-8 w-8 rounded-full" src={image} alt="" />
-          </a>
+          </Link>
         </div>
         <div className="hidden md:flex flex-row space-x-4 text-lg font-medium dark:text-gray-100">
           <ul>
             <li>
               <button className="hover:bg-gray-900 hover:text-blue-300 px-2 py-1 rounded-md">
-                Sobre
+                <Link to={`/sobre`}> Sobre </Link>
               </button>
             </li>
           </ul>
           <ul>
             <button className="hover:bg-gray-900 hover:text-blue-300 px-2 py-1 rounded-md">
-              Blog
+              <Link to={`/blog`}>o Blog </Link>
             </button>
           </ul>
           <ul>
@@ -61,15 +62,14 @@ export default function TopNav() {
                     <span> <AiFillCode height={20} /></span>
                     <span>Open Source</span>
                   </button>
-                  <button href="#" className="flex space-x-2 items-center justify-start ml-4 text-gray-100 px-4 py-2 text-base hover:bg-gray-600 w-full hover:text-blue-300" role="menuitem" tabIndex="-1" id="menu-item-0">
-                    <span> <FaBook height={20} /></span>
+                  <button className="flex space-x-2 items-center justify-start ml-4 text-gray-100 px-4 py-2 text-base hover:bg-gray-600 w-full hover:text-blue-300" role="menuitem" tabIndex="-1" id="menu-item-0">
+                    <span> <AiFillRead height={20} /></span>
                     <span>História</span>
                   </button>
-                  <button href="#" className="flex space-x-2 items-center justify-start ml-4 text-gray-100 px-4 py-2 text-base hover:bg-gray-600 w-full hover:text-blue-300" role="menuitem" tabIndex="-1" id="menu-item-0">
+                  <button className="flex space-x-2 items-center justify-start ml-4 text-gray-100 px-4 py-2 text-base hover:bg-gray-600 w-full hover:text-blue-300" role="menuitem" tabIndex="-1" id="menu-item-0">
                     <span> <AiFillTrophy height={20} /></span>
                     <span>Conquistas</span>
                   </button>
-
                 </div>
               </div>
             </>
@@ -116,6 +116,6 @@ export default function TopNav() {
           </div>
         }
       </div>
-    </nav>
+    </nav >
   )
 }

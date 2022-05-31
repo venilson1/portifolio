@@ -3,12 +3,8 @@ import React from 'react'
 export default function Footer() {
   return (
     <footer className="text-center lg:text-left dark:bg-gray-900 bg-gray-100 text-gray-600 dark:text-gray-100">
-      <div className="flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
-        <div className="mr-12  lg:block">
-          <span>© 2022 Copyright</span>
-          <a className="text-gray-400 font-semibold" href="https://www.linkedin.com/in/venilson1/" target="_blank" rel="noreferrer">{" "}  Venilson Santos</a>
-        </div>
-        <div className="flex justify-center">
+      <div className="flex-col md:flex-row flex justify-center items-center lg:justify-between p-6 space-y-2 md:space-y-0">
+        <div className="md:order-last flex justify-center">
           <a href="mailto:venilson2008@gmail.com" className="mr-6 text-gray-400">
             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google"
               className="w-3.5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512">
@@ -42,6 +38,10 @@ export default function Footer() {
               </path>
             </svg>
           </a>
+        </div>
+        <div className="md:mr-12 lg:block">
+          <span>© 2022 Copyright</span>
+          <a className="text-gray-400 font-semibold" href="https://www.linkedin.com/in/venilson1/" target="_blank" rel="noreferrer">{" "}  Venilson Santos</a>
         </div>
       </div>
     </footer>
