@@ -55,7 +55,7 @@ export default function TopNav() {
               shadow-lg dark:bg-gray-700 ring-1 ring-black ring-opacity-5 
               focus:outline-none" >
                 <div className="py-1 " role="none">
-                  <Link to={`/stacks`}>
+                  <Link to={`/stacks`} onClick={() => setDropDown(false)}>
                     <button className="relative right-4 flex space-x-2 items-center 
                     justify-start ml-4 text-gray-100 px-4 py-2 text-base 
                     hover:bg-gray-600 w-full hover:text-blue-300 " role="menuitem"
@@ -64,19 +64,19 @@ export default function TopNav() {
                       <span>Stacks</span>
                     </button>
                   </Link>
-                  <Link to={`/opensource`}>
+                  <Link to={`/opensource`} onClick={() => setDropDown(false)}>
                     <button className="relative right-4  flex space-x-2 items-center justify-start ml-4 text-gray-100 px-4 py-2 text-base hover:bg-gray-600 w-full hover:text-blue-300" role="menuitem" tabIndex="-1" id="menu-item-0">
                       <span> <AiFillCode height={20} /></span>
                       <span>Open Source</span>
                     </button>
                   </Link>
-                  <Link to={`/minha-historia`}>
+                  <Link to={`/minha-historia`} onClick={() => setDropDown(false)}>
                     <button className="relative right-4  flex space-x-2 items-center justify-start ml-4 text-gray-100 px-4 py-2 text-base hover:bg-gray-600 w-full hover:text-blue-300" role="menuitem" tabIndex="-1" id="menu-item-0">
                       <span> <AiFillRead height={20} /></span>
                       <span>História</span>
                     </button>
                   </Link>
-                  <Link to={`/conquistas`}>
+                  <Link to={`/conquistas`} onClick={() => setDropDown(false)}>
                     <button className="relative right-4  flex space-x-2 items-center justify-start ml-4 text-gray-100 px-4 py-2 text-base hover:bg-gray-600 w-full hover:text-blue-300" role="menuitem" tabIndex="-1" id="menu-item-0">
                       <span> <AiFillTrophy height={20} /></span>
                       <span>Conquistas</span>
