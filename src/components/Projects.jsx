@@ -16,7 +16,7 @@ export default function Projects() {
           <div className={` border border-gray-700 bg-gray-800 rounded-xl p-4 
           flex flex-col justify-between mx-4`}>
             <div className="flex items-center mb-4">
-              <img className="w-6 h-6 mr-4 rounded-md" src={image} alt="Avatar of Jonathan Reinink" />
+              <img className="w-6 h-6 mr-4 rounded-md" src={image} alt="" />
               <div className="text-gray-100 font-bold text-lg cursor-pointer hover:text-blue-400">Can coffee make you a better developer</div>
             </div>
             <p className="text-gray-100 text-base text-ellipsis overflow-hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>

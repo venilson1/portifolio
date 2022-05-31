@@ -51,25 +51,37 @@ export default function TopNav() {
 
           {dropDown &&
             <>
-              <div className="origin-top-right absolute right-0 top-12 mt-2 w-56 rounded-md 
-              shadow-lg dark:bg-gray-700 ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex="-1">
+              <div className="absolute right-4 top-12 mt-4 w-56 rounded-md 
+              shadow-lg dark:bg-gray-700 ring-1 ring-black ring-opacity-5 
+              focus:outline-none" >
                 <div className="py-1 " role="none">
-                  <button href="#" className="flex space-x-2 items-center justify-start ml-4 text-gray-100 px-4 py-2 text-base hover:bg-gray-600 w-full hover:text-blue-300" role="menuitem" tabIndex="-1" id="menu-item-0">
-                    <span> <AiFillThunderbolt height={20} /></span>
-                    <span>Stacks</span>
-                  </button>
-                  <button href="#" className="flex space-x-2 items-center justify-start ml-4 text-gray-100 px-4 py-2 text-base hover:bg-gray-600 w-full hover:text-blue-300" role="menuitem" tabIndex="-1" id="menu-item-0">
-                    <span> <AiFillCode height={20} /></span>
-                    <span>Open Source</span>
-                  </button>
-                  <button className="flex space-x-2 items-center justify-start ml-4 text-gray-100 px-4 py-2 text-base hover:bg-gray-600 w-full hover:text-blue-300" role="menuitem" tabIndex="-1" id="menu-item-0">
-                    <span> <AiFillRead height={20} /></span>
-                    <span>História</span>
-                  </button>
-                  <button className="flex space-x-2 items-center justify-start ml-4 text-gray-100 px-4 py-2 text-base hover:bg-gray-600 w-full hover:text-blue-300" role="menuitem" tabIndex="-1" id="menu-item-0">
-                    <span> <AiFillTrophy height={20} /></span>
-                    <span>Conquistas</span>
-                  </button>
+                  <Link to={`/stacks`}>
+                    <button className="relative right-4 flex space-x-2 items-center 
+                    justify-start ml-4 text-gray-100 px-4 py-2 text-base 
+                    hover:bg-gray-600 w-full hover:text-blue-300 " role="menuitem"
+                    >
+                      <span> <AiFillThunderbolt height={20} /></span>
+                      <span>Stacks</span>
+                    </button>
+                  </Link>
+                  <Link to={`/opensource`}>
+                    <button className="relative right-4  flex space-x-2 items-center justify-start ml-4 text-gray-100 px-4 py-2 text-base hover:bg-gray-600 w-full hover:text-blue-300" role="menuitem" tabIndex="-1" id="menu-item-0">
+                      <span> <AiFillCode height={20} /></span>
+                      <span>Open Source</span>
+                    </button>
+                  </Link>
+                  <Link to={`/minha-historia`}>
+                    <button className="relative right-4  flex space-x-2 items-center justify-start ml-4 text-gray-100 px-4 py-2 text-base hover:bg-gray-600 w-full hover:text-blue-300" role="menuitem" tabIndex="-1" id="menu-item-0">
+                      <span> <AiFillRead height={20} /></span>
+                      <span>História</span>
+                    </button>
+                  </Link>
+                  <Link to={`/conquistas`}>
+                    <button className="relative right-4  flex space-x-2 items-center justify-start ml-4 text-gray-100 px-4 py-2 text-base hover:bg-gray-600 w-full hover:text-blue-300" role="menuitem" tabIndex="-1" id="menu-item-0">
+                      <span> <AiFillTrophy height={20} /></span>
+                      <span>Conquistas</span>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </>
