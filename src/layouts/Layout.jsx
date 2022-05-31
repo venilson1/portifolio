@@ -4,6 +4,7 @@ import About from '../components/About'
 import Blog from '../components/Blog'
 import Footer from '../components/Footer'
 import Home from '../components/Home'
+import Opensource from '../components/Opensource'
 import Stacks from '../components/Stacks'
 import TopNav from '../components/TopNav'
 
@@ -17,6 +18,7 @@ export default function Layout() {
           <Route path="/sobre" element={<About />} />
           <Route path="/stacks" element={<Stacks />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/open-source" element={<Opensource />} />
         </Routes>
         <Footer />
       </Router>
