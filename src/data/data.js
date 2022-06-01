@@ -19,12 +19,33 @@ import tailwind from "../assets/skills/tailwind.png";
 import typescript from "../assets/skills/typescript.png";
 import vscode from "../assets/skills/vscode.png";
 
-export const carrer = [
+export const carrers = [
   {
     id: 1,
     company: "Solução Casting",
     occupation: "programador",
-    techs: [".NET", "SQL Server", "VueJs", "Java Script"],
+    techs: [
+      {
+        id: 1,
+        tech: ".NET",
+        badge: "bg-indigo-100 text-indigo-800",
+      },
+      {
+        id: 2,
+        tech: "SQL Server",
+        badge: "bg-red-100 text-red-800",
+      },
+      {
+        id: 2,
+        tech: "Java Script",
+        badge: "bg-yellow-100 text-yellow-800",
+      },
+      {
+        id: 4,
+        tech: "VueJS",
+        badge: "bg-green-100 text-green-800",
+      },
+    ],
     initial: "2020",
     final: "2020",
     image: casting,
@@ -33,19 +54,66 @@ export const carrer = [
     id: 2,
     company: "Free Lancer",
     occupation: "programador",
-    techs: ["Java", "React", "Postgres", "NodeJs", "Heroku"],
+    techs: [
+      {
+        id: 1,
+        tech: "Java",
+        badge: "bg-red-100 text-red-800",
+      },
+      {
+        id: 2,
+        tech: "React",
+        badge: "bg-teal-100 text-teal-800",
+      },
+      {
+        id: 2,
+        tech: "postgress",
+        badge: "bg-blue-100 text-blue-800",
+      },
+      {
+        id: 4,
+        tech: "NodeJs",
+        badge: "bg-green-100 text-green-800",
+      },
+      {
+        id: 5,
+        tech: "Heroku",
+        badge: "bg-violet-100 text-violet-800",
+      },
+    ],
     initial: "2022",
     final: "momento",
     image: semfoto,
   },
 ];
 
-export const voluntary = [
+export const voluntaries = [
   {
     id: 1,
     company: "Proz",
-    occupation: "professor Java",
-    techs: ["Java", "Phyton"],
+    occupation: "professor de programação",
+    techs: [
+      {
+        id: 1,
+        tech: "Java",
+        badge: "bg-red-100 text-red-800",
+      },
+      {
+        id: 2,
+        tech: "Phyton",
+        badge: "bg-indigo-100 text-indigo-800",
+      },
+      {
+        id: 3,
+        tech: "Estrutura de dados",
+        badge: "bg-gray-700 text-gray-300",
+      },
+      {
+        id: 4,
+        tech: "Algoritimos",
+        badge: "bg-gray-700 text-gray-300",
+      },
+    ],
     initial: "2020",
     final: "2021",
     image: proz,
@@ -54,7 +122,23 @@ export const voluntary = [
     id: 2,
     company: "Devs Free",
     occupation: "Desenvolvedor Java",
-    techs: ["Java", "Docker", "AWS"],
+    techs: [
+      {
+        id: 1,
+        tech: "Java",
+        badge: "bg-red-100 text-red-800",
+      },
+      {
+        id: 2,
+        tech: "AWS",
+        badge: "bg-orange-100 text-orange-800",
+      },
+      {
+        id: 3,
+        tech: "Docker",
+        badge: "bg-blue-100 text-blue-800",
+      },
+    ],
     initial: "2020",
     final: "momento",
     image: devsfree,
@@ -64,7 +148,7 @@ export const voluntary = [
 export const institutes = [
   {
     id: 1,
-    college: "Universidade Nove de Julho",
+    name: "Universidade Nove de Julho",
     course: "Análise e Desenvolvimento de Sistemas",
     initiation: "2019",
     conclusion: "2021",

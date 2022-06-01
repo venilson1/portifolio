@@ -1,5 +1,4 @@
 import React from 'react'
-import Projects from './Projects'
 
 export default function Home() {
 
@@ -7,7 +6,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex justify-center">
+      <div className="flex justify-center items-center">
         <div className="md:flex py-12 lg:w-1/2 lg:space-x-14 space-y-14">
           <div className="w-full flex justify-center items-center">
             <img className="h-48 w-48 rounded-full" src={image} alt="" />
@@ -21,7 +20,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Projects />
+      <br />
     </>
 
   )
