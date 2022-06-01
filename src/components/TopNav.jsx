@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { AiFillThunderbolt } from "react-icons/ai";
 import { AiFillCode } from "react-icons/ai";
-import { AiFillTrophy } from "react-icons/ai";
-import { AiFillRead } from "react-icons/ai"
 import { Link } from 'react-router-dom';
 
 
@@ -28,16 +26,22 @@ export default function TopNav() {
         <div className="hidden md:flex flex-row space-x-4 text-lg font-medium dark:text-gray-100">
           <ul>
             <li>
-              <button className="hover:bg-gray-900 hover:text-blue-300 px-2 py-1 rounded-md">
-                <Link to={`/sobre`}> Sobre </Link>
-              </button>
+              <Link to={`/sobre`}>
+                <button className="hover:bg-gray-900 hover:text-blue-300 px-2 py-1 rounded-md">
+                  Sobre
+                </button>
+              </Link>
             </li>
           </ul>
+          {/* 
           <ul>
-            <button className="hover:bg-gray-900 hover:text-blue-300 px-2 py-1 rounded-md">
-              <Link to={`/blog`}>o Blog </Link>
-            </button>
+            <Link to={`/blog`}>
+              <button className="hover:bg-gray-900 hover:text-blue-300 px-2 py-1 rounded-md">
+                o Blog
+              </button>
+            </Link>
           </ul>
+            */}
           <ul>
             <li>
               <button className="flex hover:bg-gray-900 hover:text-blue-300 px-2 py-1 rounded-md" onClick={() => setDropDown(!dropDown)}>
@@ -70,18 +74,21 @@ export default function TopNav() {
                       <span>Open Source</span>
                     </button>
                   </Link>
+                  {/*
                   <Link to={`/minha-historia`} onClick={() => setDropDown(false)}>
                     <button className="relative right-4  flex space-x-2 items-center justify-start ml-4 text-gray-100 px-4 py-2 text-base hover:bg-gray-600 w-full hover:text-blue-300" role="menuitem" tabIndex="-1" id="menu-item-0">
                       <span> <AiFillRead height={20} /></span>
                       <span>História</span>
                     </button>
                   </Link>
-                  <Link to={`/conquistas`} onClick={() => setDropDown(false)}>
+
+                  <Link to={`/certificados`} onClick={() => setDropDown(false)}>
                     <button className="relative right-4  flex space-x-2 items-center justify-start ml-4 text-gray-100 px-4 py-2 text-base hover:bg-gray-600 w-full hover:text-blue-300" role="menuitem" tabIndex="-1" id="menu-item-0">
                       <span> <AiFillTrophy height={20} /></span>
                       <span>Conquistas</span>
                     </button>
                   </Link>
+                  */}
                 </div>
               </div>
             </>
