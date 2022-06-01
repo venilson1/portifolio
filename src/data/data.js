@@ -36,7 +36,7 @@ export const carrers = [
         badge: "bg-red-100 text-red-800",
       },
       {
-        id: 2,
+        id: 3,
         tech: "Java Script",
         badge: "bg-yellow-100 text-yellow-800",
       },
@@ -66,7 +66,7 @@ export const carrers = [
         badge: "bg-teal-100 text-teal-800",
       },
       {
-        id: 2,
+        id: 3,
         tech: "postgress",
         badge: "bg-blue-100 text-blue-800",
       },

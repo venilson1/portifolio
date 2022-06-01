@@ -113,24 +113,19 @@ export default function TopNav() {
           isMenu &&
           <div className="justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
             <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
-              <li>
-                <span href="#" className="block py-2 pr-4 pl-3 text-white  rounded md:bg-transparent md:p-0 dark:text-white" aria-current="page">Home</span>
-              </li>
-              <li>
-                <span href="#" className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Sobre</span>
-              </li>
-              <li>
-                <span href="#" className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Open Source</span>
-              </li>
-              <li>
-                <span href="#" className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blog</span>
-              </li>
-              <li>
-                <span href="#" className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Stacks</span>
-              </li>
-              <li>
-                <span href="#" className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">História</span>
-              </li>
+              <Link to={`/`}>
+                <span className="block py-2 pr-4 pl-3 text-gray-400"
+                  aria-current="page">Home</span>
+              </Link>
+              <Link to={`/sobre`}>
+                <span className="block py-2 pr-4 pl-3 text-gray-400">Sobre</span>
+              </Link>
+              <Link to={`/open-source`}>
+                <span className="block py-2 pr-4 pl-3 text-gray-400">Open Source</span>
+              </Link>
+              <Link to={`/stacks`}>
+                <span className="block py-2 pr-4 pl-3 text-gray-400">Stacks</span>
+              </Link>
             </ul>
           </div>
         }

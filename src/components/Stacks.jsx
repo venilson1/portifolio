@@ -25,7 +25,7 @@ export default function Stacks() {
             <p className='underline'>{spaceBetweenUnderline}</p>
           </div>
           <div className="mt-4 flex justify-center">
-            <div className="text-xl  w-4/12">
+            <div className="text-xl  lg:w-4/12 px-2">
               <span className="">Uma lista das minhas ferramentas e tecnologias favoritas que uso regularmente.</span>
             </div>
           </div>
@@ -65,7 +65,7 @@ export default function Stacks() {
             skillsFiltered.map(({ id, name, description, link, type, image }) => {
               return (
 
-                <div key={id} className="md:w-72 border border-gray-700 bg-gray-800 rounded-xl p-4 flex">
+                <div key={id} className="w-72 border border-gray-700 bg-gray-800 rounded-xl p-4 flex">
                   <div className="flex-none flex items-center px-2 bg-slate-600 rounded-lg">
                     <img className="w-8 h-8 rounded-md" src={image} alt={name} />
                   </div>
