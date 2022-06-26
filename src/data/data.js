@@ -3,6 +3,7 @@ import proz from "../assets/logos/proz.png";
 import semfoto from "../assets/logos/sem-foto.png";
 import uninove from "../assets/logos/uninove.jpg";
 import devsfree from "../assets/logos/devsfree.png";
+import signoweb from "../assets/logos/signoweb.png";
 
 import bootstrap from "../assets/skills/bootstrap.png";
 import css3 from "../assets/skills/css3.png";
@@ -82,8 +83,48 @@ export const carrers = [
       },
     ],
     initial: "2022",
-    final: "momento",
+    final: "2022",
     image: semfoto,
+  },
+  {
+    id: 3,
+    company: "SignoWeb",
+    occupation: "programador",
+    techs: [
+      {
+        id: 1,
+        tech: "Laravel",
+        badge: "bg-gray-900 text-red-500",
+      },
+      {
+        id: 2,
+        tech: "React",
+        badge: "bg-teal-100 text-teal-800",
+      },
+      {
+        id: 3,
+        tech: "PHP",
+        badge: "bg-blue-100 text-blue-800",
+      },
+      {
+        id: 4,
+        tech: "NodeJs",
+        badge: "bg-green-100 text-green-800",
+      },
+      {
+        id: 5,
+        tech: "Java Script",
+        badge: "bg-yellow-100 text-yellow-800",
+      },
+      {
+        id: 6,
+        tech: "MySql",
+        badge: "bg-cyan-100 text-cyan-800",
+      },
+    ],
+    initial: "2022",
+    final: "momento",
+    image: signoweb,
   },
 ];
 
