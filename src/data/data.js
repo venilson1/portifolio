@@ -270,3 +270,84 @@ export const skills = [
     image: tailwind,
   },
 ];
+
+export const projects = [
+  {
+    id: 1,
+    title: "Chat - Zin",
+    url: "https://chatzinn.herokuapp.com",
+    description: "Chat online de conversas simultâneas",
+    techs: [
+      {
+        id: 1,
+        tech: "Java Script",
+        badge: "bg-yellow-100 text-yellow-800",
+      },
+      {
+        id: 2,
+        tech: "NodeJs",
+        badge: "bg-green-100 text-green-800",
+      },
+      {
+        id: 3,
+        tech: "Socket IO",
+        badge: "bg-pink-100 text-pink-800",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Snake Game",
+    url: "https://game-snake-digital-innovation-one-by-gabriela-pinhei-656m80toj.vercel.app/",
+    description: "Jogo da cobinha - Game Snake",
+    techs: [
+      {
+        id: 1,
+        tech: "Java Script",
+        badge: "bg-yellow-100 text-yellow-800",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Indicador Covid-19",
+    url: "https://dashboard-covid-19-4l6ouztx1-venilson1.vercel.app/country.html",
+    description:
+      "Indicadores de casos da covid-19, possibilitando analisar incidentes por período de tempo e filtragem de óbitos por países",
+    techs: [
+      {
+        id: 1,
+        tech: "Java Script",
+        badge: "bg-yellow-100 text-yellow-800",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Indicador Covid-19",
+    url: "https://dashboard-covid-19-4l6ouztx1-venilson1.vercel.app/country.html",
+    description:
+      "Indicadores de casos da covid-19, possibilitando analisar incidentes por período de tempo e filtragem de óbitos por países",
+    techs: [
+      {
+        id: 1,
+        tech: "Java Script",
+        badge: "bg-yellow-100 text-yellow-800",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Histórico de partidas do Campeonato Brasileiros",
+    url: "https://partidas-brasileirao-6fmhovyfx-venilson1.vercel.app/brazilian/2003",
+    description:
+      "Veja o histórico das patidas, campeões e tabela final de cada ano (2003 - 2015) do campeonato brasileiro",
+    techs: [
+      {
+        id: 1,
+        tech: "React",
+        badge: "bg-teal-100 text-teal-800",
+      },
+    ],
+  },
+];

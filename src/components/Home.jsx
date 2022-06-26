@@ -1,4 +1,5 @@
 import React from 'react'
+import Projects from './Projects'
 
 export default function Home() {
 
@@ -20,7 +21,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <br />
+      <Projects />
     </>
 
   )
